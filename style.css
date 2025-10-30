@@ -59,15 +59,15 @@ footer {
 }
 
 /* Two-column layout for members */
-.team .member {
+.members-container {
   display: flex;
   flex-wrap: wrap; /* Allows wrapping to the next row */
   gap: 2em; /* Adds spacing between columns and rows */
   justify-content: center; /* Centers the columns */
 }
 
-.team .member {
-  flex: 1 1 calc(50% - 1em); /* Each member takes 50% of the row minus spacing */
+.member {
+  flex: 1 1 calc(50% - 2em); /* Each member takes 50% of the row minus spacing */
   max-width: 400px; /* Optional: Limit the width of each column */
   display: flex;
   flex-direction: column;
@@ -76,7 +76,7 @@ footer {
   margin-bottom: 2em;
 }
 
-.team .member img {
+.member img {
   width: 150px;
   height: 150px;
   border-radius: 50%;
@@ -84,7 +84,7 @@ footer {
   margin-bottom: 1em;
 }
 
-.team .member .bio {
+.member .bio {
   max-height: 150px; /* Adjust height as needed */
   overflow-y: auto; /* Enables scrolling for long content */
   padding: 0.5em;
@@ -95,22 +95,22 @@ footer {
   text-align: left; /* Aligns text for better readability */
 }
 
-.team .member ul {
+.member ul {
   list-style: none; /* Removes bullets */
   padding: 0;
   margin: 0;
 }
 
-.team .member ul li {
+.member ul li {
   margin: 0.5em 0;
 }
 
-.team .member ul li a {
+.member ul li a {
   color: #003366;
   text-decoration: none;
 }
 
-.team .member ul li a:hover {
+.member ul li a:hover {
   text-decoration: underline;
 }
 
