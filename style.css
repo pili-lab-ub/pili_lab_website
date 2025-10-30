@@ -59,7 +59,7 @@ footer {
 }
 
 /* Two-column layout for members */
-.team .members-container {
+.team .member {
   display: flex;
   flex-wrap: wrap; /* Allows wrapping to the next row */
   gap: 2em; /* Adds spacing between columns and rows */
