@@ -58,7 +58,17 @@ footer {
   text-transform: uppercase;
 }
 
+/* Two-column layout for members */
+.team .members-container {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping to the next row */
+  gap: 2em; /* Adds spacing between columns and rows */
+  justify-content: center; /* Centers the columns */
+}
+
 .team .member {
+  flex: 1 1 calc(50% - 1em); /* Each member takes 50% of the row minus spacing */
+  max-width: 400px; /* Optional: Limit the width of each column */
   display: flex;
   flex-direction: column;
   align-items: center;
