@@ -1,49 +1,65 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', sans-serif; /* Modern font */
   margin: 0;
-  background-color: #fdfdfd;
+  background-color: #f9fafc; /* Light background for a clean look */
   color: #333;
+  line-height: 1.6;
 }
 
 header {
   background-color: #003366;
   color: white;
-  padding: 1em;
+  padding: 1.5em 1em;
   text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+header h1 {
+  font-size: 2em;
+  margin: 0;
 }
 
 nav ul {
   list-style: none;
   padding: 0;
+  margin: 1em 0 0;
 }
 
 nav ul li {
-  display: inline;
+  display: inline-block;
   margin: 0 1em;
 }
 
 nav a {
   color: white;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 500;
+  font-size: 1em;
+  transition: color 0.3s ease;
 }
 
 nav a.active, nav a:hover {
-  text-decoration: underline;
+  color: #00bcd4; /* Accent color for hover */
 }
 
 main {
   padding: 2em;
-  max-width: 900px;
+  max-width: 1100px; /* Wider content area */
   margin: auto;
 }
 
 footer {
   text-align: center;
-  padding: 1em;
-  background-color: #f0f0f0;
+  padding: 1.5em;
+  background-color: #003366;
+  color: white;
   font-size: 0.9em;
-  color: #555;
+  margin-top: 2em;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1); /* Shadow for separation */
+}
+
+footer p {
+  margin: 0;
 }
 
 .team {
@@ -53,16 +69,17 @@ footer {
 .team h2 {
   text-align: center;
   margin-bottom: 1em;
-  font-size: 1.8em;
+  font-size: 2em;
   color: #003366;
   text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 /* Two-column layout for members */
 .members-container {
   display: flex;
   flex-wrap: wrap; /* Allows wrapping to the next row */
-  gap: 2em; /* Adds spacing between columns and rows */
+  gap: 2em; /* Adds spacing between items */
   justify-content: center; /* Centers the columns */
 }
 
@@ -74,31 +91,54 @@ footer {
   align-items: center;
   text-align: center;
   margin-bottom: 2em;
+  background: white; /* Card-like design */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.member:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
 }
 
 .member img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 1em;
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #eee; /* Separator for the image */
+}
+
+.member h3 {
+  font-size: 1.2em;
+  margin: 0.5em 0;
+  color: #003366;
+}
+
+.member p {
+  font-size: 0.9em;
+  color: #666;
+  margin: 0.5em 0 1em;
 }
 
 .member .bio {
   max-height: 150px; /* Adjust height as needed */
   overflow-y: auto; /* Enables scrolling for long content */
-  padding: 0.5em;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: #f9f9f9;
-  margin: 1em 0;
+  padding: 1em;
+  border-top: 1px solid #eee;
+  background-color: #f9fafc;
   text-align: left; /* Aligns text for better readability */
+  font-size: 0.9em;
+  color: #555;
 }
 
 .member ul {
   list-style: none; /* Removes bullets */
   padding: 0;
   margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
 }
 
 .member ul li {
@@ -106,12 +146,14 @@ footer {
 }
 
 .member ul li a {
-  color: #003366;
+  color: #00bcd4; /* Accent color */
   text-decoration: none;
+  font-size: 0.9em;
+  transition: color 0.3s ease;
 }
 
 .member ul li a:hover {
-  text-decoration: underline;
+  color: #007a8c; /* Darker accent on hover */
 }
 
 /* Center the section headers */
@@ -122,4 +164,39 @@ footer {
   font-size: 2em;
   font-weight: bold;
   color: #003366;
+}
+
+/* Projects Gallery */
+.projects-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  justify-content: center;
+  margin-top: 2em;
+}
+
+.projects-gallery a {
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+  width: 200px;
+}
+
+.projects-gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projects-gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.projects-gallery p {
+  margin-top: 0.5em;
+  font-size: 0.9em;
+  font-weight: bold;
 }
