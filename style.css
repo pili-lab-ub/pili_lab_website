@@ -170,33 +170,47 @@ footer p {
 .projects-gallery {
   display: flex;
   flex-wrap: wrap;
-  gap: 2em;
-  justify-content: center;
+  gap: 2em; /* Space between cards */
+  justify-content: center; /* Center the gallery */
   margin-top: 2em;
 }
 
-.projects-gallery a {
-  text-align: center;
+.project-card {
+  display: block;
+  width: 250px; /* Fixed width for cards */
   text-decoration: none;
-  color: #333;
-  width: 200px;
-}
-
-.projects-gallery img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: inherit;
+  background: white;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.projects-gallery img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+.project-card:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
 }
 
-.projects-gallery p {
-  margin-top: 0.5em;
+.project-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.project-info {
+  padding: 1em;
+  text-align: center;
+}
+
+.project-info h3 {
+  font-size: 1.2em;
+  color: #003366; /* Dark blue for headings */
+  margin: 0.5em 0;
+}
+
+.project-info p {
   font-size: 0.9em;
-  font-weight: bold;
+  color: #666; /* Subtle gray for descriptions */
+  margin: 0;
 }
