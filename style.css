@@ -53,6 +53,9 @@ footer {
 .team h2 {
   text-align: center;
   margin-bottom: 1em;
+  font-size: 1.8em;
+  color: #003366;
+  text-transform: uppercase;
 }
 
 .team .member {
@@ -72,18 +75,20 @@ footer {
 }
 
 .team .member .bio {
-  max-height: 150px;
-  overflow-y: auto;
+  max-height: 150px; /* Adjust height as needed */
+  overflow-y: auto; /* Enables scrolling for long content */
   padding: 0.5em;
   border: 1px solid #ccc;
   border-radius: 5px;
   background-color: #f9f9f9;
   margin: 1em 0;
+  text-align: left; /* Aligns text for better readability */
 }
 
 .team .member ul {
-  list-style: none;
+  list-style: none; /* Removes bullets */
   padding: 0;
+  margin: 0;
 }
 
 .team .member ul li {
@@ -97,4 +102,14 @@ footer {
 
 .team .member ul li a:hover {
   text-decoration: underline;
+}
+
+/* Center the section headers */
+.current-members h2,
+.former-members h2 {
+  text-align: center;
+  margin-bottom: 1.5em;
+  font-size: 2em;
+  font-weight: bold;
+  color: #003366;
 }
