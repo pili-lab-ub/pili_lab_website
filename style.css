@@ -1,0 +1,66 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #fdfdfd;
+  color: #333;
+}
+
+header {
+  background-color: #003366;
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 1em;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a.active, nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 2em;
+  max-width: 900px;
+  margin: auto;
+}
+
+footer {
+  text-align: center;
+  padding: 1em;
+  background-color: #f0f0f0;
+  font-size: 0.9em;
+  color: #555;
+}
+
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2em;
+}
+
+.member {
+  text-align: center;
+  width: 200px;
+}
+
+.member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
