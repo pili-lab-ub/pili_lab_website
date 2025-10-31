@@ -8,7 +8,7 @@ body {
 
 /* Header with Background Image and Overlayed Logo */
 header {
-  background-image: url('../images/buffalo.png'); /* Path to the buffalo.png image */
+  background-image: url('images/buffalo.png'); /* Path to the buffalo.png image */
   background-size: cover; /* Ensures the image covers the entire header */
   background-position: center; /* Centers the image */
   background-repeat: no-repeat; /* Prevents the image from repeating */
