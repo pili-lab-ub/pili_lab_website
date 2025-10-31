@@ -6,17 +6,36 @@ body {
   line-height: 1.6;
 }
 
+/* Header with Background Image and Overlayed Logo */
 header {
-  background-color: #003366;
-  color: white;
-  padding: 1.5em 1em;
+  background-image: url('../images/buffalo.png'); /* Path to the buffalo.png image */
+  background-size: cover; /* Ensures the image covers the entire header */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  height: 250px; /* Adjust the height of the header */
+  position: relative; /* Enables positioning for the logo */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white; /* Ensures text is visible on the image */
   text-align: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+header img {
+  position: absolute; /* Allows the logo to be positioned over the background */
+  top: 20px; /* Adjust the vertical position of the logo */
+  left: 20px; /* Adjust the horizontal position of the logo */
+  width: 100px; /* Adjust the size of the logo */
+  height: auto; /* Maintain the aspect ratio */
+  z-index: 2; /* Ensures the logo appears above the background */
 }
 
 header h1 {
-  font-size: 2em;
+  font-size: 2.5em;
   margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds a shadow for better readability */
+  z-index: 1; /* Ensures the text is above the background */
 }
 
 nav ul {
