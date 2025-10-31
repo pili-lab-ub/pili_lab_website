@@ -409,3 +409,12 @@ nav a.active, nav a:hover {
   color: #003366;
   margin-top: 0.5em;
 }
+
+.video-gallery {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping of video cards within the gallery */
+  gap: 2em; /* Space between video cards */
+  justify-content: center; /* Center the videos within the gallery */
+  width: 100%; /* Ensure the gallery takes up the full width */
+  margin-bottom: 2em; /* Add spacing between rows of galleries */
+}
