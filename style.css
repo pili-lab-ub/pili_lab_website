@@ -38,6 +38,11 @@ header h1 {
   z-index: 1; /* Ensures the text is above the background */
 }
 
+nav {
+  position: relative;
+  z-index: 2; /* Ensures the nav is above the background */
+}
+
 nav ul {
   list-style: none;
   padding: 0;
@@ -50,7 +55,7 @@ nav ul li {
 }
 
 nav a {
-  color: white;
+  color: #003366;
   text-decoration: none;
   font-weight: 500;
   font-size: 1em;
