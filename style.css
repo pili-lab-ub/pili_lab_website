@@ -110,7 +110,7 @@ footer p {
 
 .member img {
   width: 100%;
-  height: 250px;        /* Set a fixed height (adjust as needed) */
+  height: 400px;        /* Set a fixed height (adjust as needed) */
   object-fit: cover;    /* Crop/scale image to fill while keeping aspect ratio */
   border-bottom: 1px solid #eee; /* Separator for the image */
 }
