@@ -343,9 +343,10 @@ footer p {
 }
 
 .videos h2 {
-  font-size: 2rem;
-  margin-bottom: 30px;
-  color: #333;
+  text-align: center;
+  font-size: 2em;
+  color: #003366;
+  margin-bottom: 1.5em;
 }
 
 /* Center the video grid */
@@ -361,10 +362,10 @@ footer p {
 
 /* Style each embedded video */
 .videos .video-grid iframe {
-  width: 400px;
-  height: 225px;
+  width: auto;
+  height: auto;
   border-radius: 12px;
-  border: none;
+  border: aliceblue;
   transition: transform 0.3s ease;
 }
 
