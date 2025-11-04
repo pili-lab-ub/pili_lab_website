@@ -336,81 +336,39 @@ footer p {
   margin: 0;
 }
 
-/* ========== Featured Videos — make them match Latest News ========== */
 .videos {
-  margin-top: 3em;
-  padding: 2em 1em;
-  background-color: #f9fafc;
-  max-width: 1100px;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 50px 0;
+  background-color: #f8f8f8;
 }
 
 .videos h2 {
-  text-align: center;
-  font-size: 2em;
-  color: #003366;
-  margin-bottom: 1.5em;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #333;
 }
 
-/* Make the gallery match the news grid behavior */
-.video-gallery {
+/* Center the video grid */
+.videos .video-grid {
   display: flex;
-  flex-wrap: wrap;
-  gap: 2em;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-/* Reuse the same card design as .news-card */
-.video-card {
-  display: block;
-  width: 300px;              /* same fixed width as .news-card */
-  text-decoration: none;
-  color: inherit;
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  text-align: left;          /* align title/padding like news cards */
+/* Style each embedded video */
+.videos .video-grid iframe {
+  width: 400px;
+  height: 225px;
+  border-radius: 12px;
+  border: none;
+  transition: transform 0.3s ease;
 }
 
-/* Hover / lift effect matches news cards */
-.video-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
-}
-
-/* Make the iframe responsive and maintain 16:9 aspect ratio */
-.video-card .video-wrapper {
-  position: relative;
-  width: 100%;
-  padding-top: 56.25%; /* 16:9 aspect ratio (9/16 = 56.25%) */
-  background: #000;     /* shows as black while video loads */
-}
-
-.video-card iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
-  display: block;
-}
-
-/* Title and spacing like news content */
-.video-card h3 {
-  font-size: 1.2em;
-  color: #003366;
-  margin: 0.75em 1em; /* similar padding to .news-content */
-}
-
-@media (max-width: 760px) {
-  /* stack cards full-width on narrow screens */
-  .video-card {
-    width: calc(100% - 2em); /* allow margin/gap */
-  }
+/* Simple hover scale — no blur, no opacity */
+.videos .video-grid iframe:hover {
+  transform: scale(1.03);
 }
